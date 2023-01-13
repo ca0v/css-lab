@@ -1,3 +1,16 @@
+/*
+  This is a very simple clone of flicker.
+  It simulates a smaller media query breakpoint.
+  When the form is large the search is always visible
+  as is the flickr logo on the left.
+
+  It adds a sign-up button to the nav bar.
+
+  Flickr uses yui3 for its css. I'm not using it here.
+
+  I'm satisfied with the approximation but can appreciate the difficulty
+  in pixel-perfecting a clone.
+*/
 @media (prefers-color-scheme: dark) {
   body {
     background-color: #000;
@@ -28,6 +41,8 @@ body {
   height: 100%;
   background-image: url("https://combo.staticflickr.com/ap/build/images/sohp/2020-top-25/Dawn_of_Another_Day_Sky_Matthews.jpg");
   opacity: 0.8;
+  /* cover background */
+  background-size: cover;
 }
 
 .canvas-overlay {
@@ -95,8 +110,8 @@ nav .flickr > b {
 }
 
 nav > .flickr > .circle {
-  width: 0.7rem;
-  height: 0.7rem;
+  width: 0.7em;
+  height: 0.7em;
   border-radius: 50%;
   margin-left: 0.1em;
 }
@@ -109,7 +124,7 @@ nav > .flickr > .circle.red {
   background-color: red;
 }
 
-nav > .search > input {
+nav.searching > .search > input {
   box-sizing: border-box;
   height: 2.3em;
   width: 100%;
@@ -117,7 +132,7 @@ nav > .search > input {
   background-color: white;
   font-size: 1em;
   border: none;
-  padding-left: 2em;
+  padding-left: 3em;
 }
 
 nav:not(.searching) > .search > input {
@@ -135,6 +150,7 @@ nav.searching > .search::before {
   font-size: 1.5em;
   color: white;
   position: absolute;
+  margin-left: 0.25em;
 }
 
 nav > .show-search-input {
@@ -160,7 +176,7 @@ nav.searching > .show-search-input::before {
 }
 
 .login > button {
-  border: 0.15rem solid white;
+  border: 0.15em solid white;
   background-color: transparent;
   width: 5em;
   height: 2.5em;
