@@ -1,16 +1,18 @@
 try {
 const showSearchButton = document.querySelector('.show-search-input');
-const search = document.querySelector('.search');
-const flickr = document.querySelector('.flickr');
+const nav = document.querySelector('nav');
+const cookieButton = document.querySelector('.cookie-policy-button');
 
-console.log({showSearchButton, search, flickr})
 let searching = false;
+
+// close the cookie policy on click
+cookieButton.addEventListener('click', () => {
+    document.querySelector('.cookie-policy')?.remove();
+});
 
 const toggler = () => {
     searching = !searching;
-    search.classList.toggle('hidden', !searching);
-    flickr.classList.toggle('hidden', searching);
-    showSearchButton.classList.toggle("searching", searching);
+    nav.classList.toggle('searching', searching);
 }
 
 showSearchButton.addEventListener('click', toggler);
