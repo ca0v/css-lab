@@ -1,0 +1,102 @@
+@media (prefers-color-scheme: dark) {
+  body {
+    background-color: black;
+    color: white;
+  }
+}
+
+body {
+    font-family: square, sans-serif;
+    margin: 0;
+}
+
+main {
+  display: grid;
+  grid-template-rows: 15vh 25vh 5vh 20vh;
+  margin: 0;
+  padding: 0;
+}
+
+.nova {
+  text-transform: uppercase;
+}
+
+h1.nova {
+  letter-spacing: 0.2em;
+  font-size: 15vw;
+  text-align: center;
+  font-weight: bold;
+  transform: scale(1, 0.9);
+}
+
+p.nova {
+  font-family: square, sans-serif;
+  font-size: 3vw;
+  text-transform: capitalize;
+  text-align: center;
+  letter-spacing: 0.04em;
+}
+
+nav {
+  display: grid;
+  grid-template-columns: 1fr repeat(4, auto) fit-content(100%);
+  padding: 2em;
+  column-gap: 1em;
+  align-items: center;
+}
+
+nav > div {
+  text-align: center;
+  font-size: smaller;
+}
+
+button {
+  font-weight: bold;
+  background-color: hsl(227, 60%, 56%);
+  color: white;
+  border: none;
+  padding: 1em;
+  padding-left: 2em;
+  padding-right: 2em;
+  /* soft glow around button */
+  box-shadow: 2px 3px 10px 0 hsla(0, 0%, 0%, 0.3);
+}
+
+.logo {
+  background-size: cover;
+  background-image: url(https://mayvue.com/wp-content/uploads/2020/03/logo.png);
+  height: 3em;
+  width: 9em;
+}
+
+.background-image,
+.background-filter {
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  z-index: -1;
+}
+
+.background-image {
+  background-size: cover;
+  background-image: url(https://www.mayvue.com/wp-content/uploads/2020/02/banner-min.png);
+}
+
+.background-filter {
+  background-color: hsl(0, 0%, 25%);
+  opacity: 0.3;
+}
+
+.fade {
+    /* gradient fade at bottom of page */
+    background: linear-gradient(transparent, black);
+}
+section {
+    padding: 2em;
+    background-color: inherit;
+}
+section > p {
+    line-height: 1.5em;
+}
