@@ -1,8 +1,16 @@
+* {
+  --darkdark-background: hsl(187, 10%, 10%);
+  --dark-background: hsl(187, 15%, 15%);
+  --background: hsl(187, 30%, 30%);
+  --lite-text: hsl(187, 56%, 78%);
+  --lite-border-color: hsl(187, 40%, 40%);
+}
+
 /* dark scheme media query */
 @media (prefers-color-scheme: dark) {
   body {
-    background-color: hsl(187, 30%, 30%);
-    color: hsl(187, 56%, 78%);
+    background-color: var(--background);
+    color: var(--lite-text);
   }
 }
 
@@ -21,7 +29,7 @@ body > header {
   margin-top: 0.25em;
   padding: 1em;
   padding-bottom: 0.5em;
-  background-color: hsl(187, 10%, 10%);
+  background-color: var(--darkdark-background);
 }
 
 body > header > nav {
@@ -82,6 +90,8 @@ body > main {
   background-image: url(./assets/hero-solar-panels-field-desktop.jfif);
   /* fill the background with the image */
   background-size: cover;
+  background-repeat: no-repeat;
+    background-position: center;
 }
 
 main .deck {
@@ -100,7 +110,7 @@ main .deck {
   justify-content: center;
   align-items: center;
   margin: 0.5em;
-  width: 20vw;
+  width: clamp(5em, 20vw, 16em);
   height: 8em;
   background-color: hsl(0, 10%, 10%, 0.85);
   border-radius: 0.25em;
@@ -109,8 +119,8 @@ main .deck {
 }
 
 .deck-title {
-    text-align: center;
-    font-size: 16pt;
+  text-align: center;
+  font-size: 16pt;
 }
 
 .deck-item > .icon {
@@ -121,11 +131,46 @@ main .deck {
 }
 
 .deck-item > .deck-item-title {
-
 }
 
 .flex-vertical {
   display: flex;
   flex-direction: column;
   justify-content: center;
+}
+
+.flex-horizontal {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  gap: 1em;
+}
+
+section.winter {
+  background-color: var(--dark-background);
+  padding: 1em;
+}
+
+section.winter .title {
+  font-size: inherit;
+  line-height: 2em;
+}
+
+section.winter .description {
+  font-size: smaller;
+}
+
+section.winter .icon {
+  width: 60px;
+}
+
+section.winter .button {
+  height: 3em;
+  width: 8em;
+  background-color: transparent;
+  color: var(--light-text);
+  letter-spacing: -1px;
+  font-size: smaller;
+  border: 1px solid var(--lite-border-color);
 }
