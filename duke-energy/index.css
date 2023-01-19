@@ -2,6 +2,7 @@
   --darkdark-background: hsl(187, 10%, 10%);
   --dark-background: hsl(187, 15%, 15%);
   --background: hsl(187, 30%, 30%);
+  --litelite-text: hsl(187, 99%, 99%);
   --lite-text: hsl(187, 56%, 78%);
   --lite-border-color: hsl(187, 40%, 40%);
   --border-radius: 0.25em;
@@ -162,9 +163,10 @@ section .description {
   font-size: smaller;
 }
 
-section .title {
+.title {
   font-size: var(--font-size-2);
   line-height: 2em;
+  color: var(--litelite-text);
 }
 
 section.winter .icon {
