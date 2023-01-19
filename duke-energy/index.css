@@ -1,0 +1,131 @@
+/* dark scheme media query */
+@media (prefers-color-scheme: dark) {
+  body {
+    background-color: hsl(187, 30%, 30%);
+    color: hsl(187, 56%, 78%);
+  }
+}
+
+:root {
+  font-family: sans-serif;
+  letter-spacing: 0.8px;
+  font-size: 11pt;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+}
+
+body > header {
+  margin-top: 0.25em;
+  padding: 1em;
+  padding-bottom: 0.5em;
+  background-color: hsl(187, 10%, 10%);
+}
+
+body > header > nav {
+  display: grid;
+  grid-template-columns: 1fr auto;
+}
+
+body > header > nav > nav {
+  display: flex;
+  flex-direction: row;
+}
+
+nav > .toolbar-item {
+  font-size: 6pt;
+}
+
+.toolbar-item use {
+  margin-bottom: 1em;
+  padding-bottom: 1em;
+}
+
+.hamburg-menu {
+  width: 30px;
+  height: 30px;
+  position: relative;
+  cursor: pointer;
+}
+
+.hamburg-menu::before {
+  /* utf-8 hamburg menu */
+  content: "\2630";
+}
+
+.vertical-separator::before {
+  content: "|";
+  color: hsl(187, 20%, 20%);
+  padding: 0.5em;
+  font-size: 14pt;
+}
+
+.title-bar {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.logo {
+  background-image: url(assets/logoduke.svg);
+  width: 60px;
+  height: 20px;
+  background-size: contain;
+}
+
+.signin-button {
+}
+
+body > main {
+  height: 15em;
+  background-image: url(./assets/hero-solar-panels-field-desktop.jfif);
+  /* fill the background with the image */
+  background-size: cover;
+}
+
+main .deck {
+  display: flex;
+  flex-direction: row;
+  gap: 4vw;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+}
+
+.deck > .deck-item {
+  display: flex;
+  flex-direction: column;
+  gap: 1em;
+  justify-content: center;
+  align-items: center;
+  margin: 0.5em;
+  width: 20vw;
+  height: 8em;
+  background-color: hsl(0, 10%, 10%, 0.85);
+  border-radius: 0.25em;
+  font-size: 8pt;
+  text-align: center;
+}
+
+.deck-title {
+    text-align: center;
+    font-size: 16pt;
+}
+
+.deck-item > .icon {
+  width: 60px;
+  height: 20px;
+  background-image: url(./assets/logoduke.svg);
+  background-size: cover;
+}
+
+.deck-item > .deck-item-title {
+
+}
+
+.flex-vertical {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
