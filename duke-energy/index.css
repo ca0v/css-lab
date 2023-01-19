@@ -4,6 +4,12 @@
   --background: hsl(187, 30%, 30%);
   --lite-text: hsl(187, 56%, 78%);
   --lite-border-color: hsl(187, 40%, 40%);
+  --border-radius: 0.25em;
+  --font-size-2: 14pt;
+  --font-size-3: 12pt;
+  --font-size-4: 10pt;
+  --font-size-5: 8pt;
+  --font-size-6: 6pt;
 }
 
 /* dark scheme media query */
@@ -17,7 +23,7 @@
 :root {
   font-family: sans-serif;
   letter-spacing: 0.8px;
-  font-size: 11pt;
+  font-size: var(--font-size-4);
 }
 
 body {
@@ -43,7 +49,7 @@ body > header > nav > nav {
 }
 
 nav > .toolbar-item {
-  font-size: 6pt;
+  font-size: var(--font-size-6);
 }
 
 .toolbar-item use {
@@ -67,7 +73,7 @@ nav > .toolbar-item {
   content: "|";
   color: hsl(187, 20%, 20%);
   padding: 0.5em;
-  font-size: 14pt;
+  font-size: var(--font-size-6);
 }
 
 .title-bar {
@@ -91,7 +97,7 @@ body > main {
   /* fill the background with the image */
   background-size: cover;
   background-repeat: no-repeat;
-    background-position: center;
+  background-position: center;
 }
 
 main .deck {
@@ -113,14 +119,14 @@ main .deck {
   width: clamp(5em, 20vw, 16em);
   height: 8em;
   background-color: hsl(0, 10%, 10%, 0.85);
-  border-radius: 0.25em;
-  font-size: 8pt;
+  border-radius: var(--border-radius);
+  font-size: var(--font-size-5);
   text-align: center;
 }
 
 .deck-title {
   text-align: center;
-  font-size: 16pt;
+  font-size: var(--font-size-2);
 }
 
 .deck-item > .icon {
@@ -147,25 +153,39 @@ main .deck {
   gap: 1em;
 }
 
-section.winter {
+section {
   background-color: var(--dark-background);
   padding: 1em;
 }
 
-section.winter .title {
-  font-size: inherit;
-  line-height: 2em;
+section .description {
+  font-size: smaller;
 }
 
-section.winter .description {
-  font-size: smaller;
+section .title {
+  font-size: var(--font-size-2);
+  line-height: 2em;
 }
 
 section.winter .icon {
   width: 60px;
 }
 
-section.winter .button {
+section.outdoor-lighting {
+  background-color: var(--darkdark-background);
+}
+
+section.outdoor-lighting > .flex-horizontal {
+  /* each cell gets equal spacing */
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(10em, 1fr));
+}
+
+section.outdoor-lighting > .flex-horizontal > img {
+  width: 100%;
+}
+
+.button {
   height: 3em;
   width: 8em;
   background-color: transparent;
@@ -173,4 +193,16 @@ section.winter .button {
   letter-spacing: -1px;
   font-size: smaller;
   border: 1px solid var(--lite-border-color);
+}
+
+.button.action {
+  background-color: var(--background);
+}
+
+img.rounded {
+  border-radius: var(--border-radius);
+}
+
+.tiny {
+  font-size: var(--font-size-6);
 }
