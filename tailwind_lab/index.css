@@ -1,0 +1,27 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer components {
+  .btn-primary {
+    @apply py-2 px-4 bg-blue-900 
+    text-white font-semibold 
+    rounded-lg shadow-md 
+    hover:bg-blue-700 
+    focus:outline-none focus:ring-2 focus:ring-blue-400 focus:ring-opacity-75;
+  }
+}
+
+@layer components {
+  input {
+    @apply text-blue-900 bg-blue-200 ring-pink-500 invalid:text-red-500 rounded p-1;
+  }
+}
+
+body {
+  padding: 1em;
+}
+
+form > *:not(:last-child) {
+  margin-bottom: 1em;
+}
