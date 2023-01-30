@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./index.css" />
+    <title>
+      Kopis: Custom Software Development & Tech Solutions - Greenville, SC
+    </title>
+  </head>
+  <body>
+    <header>
+      <div class="logo">
+        <div class="title">KOPIS</div>
+        <div class="triangle-100"></div>
+      </div>
+      <nav>
+        <div class="dropdown solutions">Solutions</div>
+        <a href="./smart-government.html">Smart Government</a>
+        <a href="./case-studies.html">Case Studies</a>
+        <div class="flex-row-tight">
+          <div class="triangle-50 red"></div>
+          <a class="call-to-action" href="./discovery-call.html"
+            >Book a discovery call</a
+          >
+        </div>
+      </nav>
+    </header>
+    <main>
+      <p class="company-solutions">
+        Custom Software, Product Development & Tech Solutions
+      </p>
+      <p class="company-pitch">Where Growing Companies</p>
+      <div class="company-pitch">
+        <p>Come To&nbsp;</p>
+        <p class="goals slinky">Improve Reliability</p>
+      </div>
+    </main>
+    <div class="popup-menu hidden"></div>
+    <style></style>
+    <script>
+      const menu = {
+        "DIGITAL PRODUCT DEVELOPMENT": [
+          "Software Development",
+          "App Development",
+          "Modernization",
+          "UI/UX",
+        ],
+        "MANAGED SERVICES": ["SQL Managed Services", "Software Support"],
+        "BUSINESS PROCESS IMPROVEMENT": [
+          "ERP Implementation",
+          "SMB Launch",
+          "Workflow Automation",
+        ],
+        ANALYTICS: ["Business Intelligence"],
+      }
+
+      let thingIndex = 0
+      const things =
+        "Build Better solutions,Increase Efficiency,Improve Reliability".split(
+          ","
+        )
+      // when slinky animation is done, remove the animation
+
+      const doit = () => {
+        const slinky = document.querySelector(".slinky")
+        const text = things[thingIndex++ % things.length]
+        slinky.textContent = text
+        // compute with of slinky
+        const slinkyWidth = slinky.getBoundingClientRect().width
+        // animation: slinky 4s ease-in-out infinite alternate;
+        slinky.style.maxWidth = -0.5 + text.length / 2 + "em"
+      }
+      setInterval(doit, 4000)
+      doit()
+
+      const buildPopup = () => {
+        const popup = document.querySelector(".popup-menu")
+        const menuKeys = Object.keys(menu)
+        const menuItems = menuKeys.map((key) => {
+          const subMenu = menu[key]
+          const subMenuItems = subMenu.map((item) => {
+            return `<a href="#">${item}</a>`
+          })
+          return `<div class="menu-item">
+            <div class="menu-item-title">${key}</div>
+            <div class="menu-item-submenu">
+              ${subMenuItems.join("")}
+            </div>
+          </div>`
+        })
+        popup.innerHTML = menuItems.join("")
+      }
+      buildPopup()
+
+      // on hover of solutions, show popup
+      const solutions = document.querySelector(".solutions")
+      solutions.addEventListener("mouseenter", () => {
+        const popup = document.querySelector(".popup-menu")
+        popup.classList.remove("hidden")
+      })
+    </script>
+  </body>
+</html>

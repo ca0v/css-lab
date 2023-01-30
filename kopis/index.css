@@ -1,0 +1,225 @@
+.flex-row-tight {
+  display: flex;
+  flex-direction: row;
+}
+
+body {
+  background-color: #2531c0ee;
+  color: white;
+  font-family: "Roboto", sans-serif;
+  margin: 0;
+}
+
+header {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  /* vertically center each element */
+  align-items: center;
+  justify-items: first last;
+}
+
+header > .logo {
+  display: flex;
+  flex-direction: row;
+  height: 8rem;
+  /* just wide enough to contain */
+  width: 16rem;
+}
+
+header > .logo > .title {
+  width: 10rem;
+  height: 8rem;
+  background-color: white;
+  color: black;
+  text-align: center;
+  line-height: 8rem;
+  font-size: 2.5rem;
+  font-style: italic;
+  font-weight: bold;
+  /* stretch font vertically */
+  letter-spacing: 0.1rem;
+  width: 100%;
+}
+
+header > nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 2rem;
+}
+
+nav a,
+nav div {
+  color: white;
+  text-decoration: none;
+  text-transform: capitalize;
+  white-space: nowrap;
+}
+
+nav a:hover,
+nav div:hover {
+  /* slowly underline */
+  text-decoration-line: underline;
+  text-decoration-color: white;
+  text-decoration-style: solid;
+  text-decoration-thickness: 0rem;
+  animation: underline 100ms ease-in-out;
+  /* keep the animation */
+  animation-fill-mode: forwards;
+}
+
+@keyframes underline {
+  0% {
+    text-decoration-thickness: 0rem;
+  }
+  100% {
+    text-decoration-thickness: 0.3rem;
+  }
+}
+
+a.call-to-action {
+  background-color: red;
+  padding: 0.5rem 1rem;
+  line-height: 2em;
+  width: 15em;
+  text-transform: uppercase;
+  letter-spacing: 0.1rem;
+  padding-right: 4rem;
+}
+
+.triangle-50 {
+  width: 0;
+  height: 0;
+  border-left: 5px solid transparent;
+  border-right: 0px solid transparent;
+  border-bottom: 50px solid red;
+}
+
+.triangle-100 {
+  width: 0;
+  height: 0;
+  border-left: 0px solid transparent;
+  border-right: 2rem solid transparent;
+  border-top: 8rem solid;
+}
+
+a.call-to-action::before {
+  content: " ";
+}
+
+a.call-to-action::after {
+  content: " ＞";
+}
+
+/* use utf-8 right-arrow -> */
+a.call-to-action:hover::after {
+  content: " →";
+}
+
+.dropdown::after {
+  cursor: pointer;
+  content: " ▽";
+}
+
+main {
+  /* display in center of screen */
+  margin-top: 6em;
+
+  display: flex;
+  flex-direction: column;
+}
+
+main p {
+  margin: 0;
+  padding: 0;
+}
+
+.company-solutions {
+  font-size: 1rem;
+  letter-spacing: 0.1rem;
+  text-transform: uppercase;
+  margin-bottom: 2em;
+}
+
+.company-pitch {
+  display: flex;
+  font-size: 3rem;
+  font-weight: bold;
+  letter-spacing: -0.1rem;
+  text-transform: capitalize;
+}
+
+.company-pitch > .goals {
+  display: inline-block;
+}
+
+.slinky {
+  overflow: hidden;
+  white-space: nowrap;
+  border-bottom: 0.3rem solid red;
+  animation: slinky 4s ease-in-out infinite alternate;
+}
+
+.slinky::after {
+  content: " |";
+  color: black;
+  /* blink */
+  animation: blink 1s step-end infinite;
+}
+
+@keyframes blink {
+  50% {
+    opacity: 0;
+  }
+}
+
+@keyframes slinky {
+  0%,
+  100% {
+    width: 0;
+  }
+  20%,
+  80% {
+    width: 100%;
+  }
+}
+
+.popup-menu.hidden {
+  display: none;
+}
+
+.popup-menu {
+  position: absolute;
+  top: 8em;
+  left: 2em;
+  display: flex;
+  flex-direction: row;
+  background-color: rgba(255, 255, 255, 0.95);
+  color: black;
+  padding: 2em;
+  /* skew the menu */
+  transform: skew(-10deg);
+}
+
+.menu-item-title {
+  width: 16em;
+  font-weight: bold;
+  text-transform: uppercase;
+  letter-spacing: 0.1rem;
+  padding: 0.5rem 1rem;
+}
+
+.menu-item-submenu > a {
+  display: block;
+  padding: 0.5rem 1rem;
+  text-decoration: none;
+  color: black;
+}
+
+.menu-item-submenu > a:hover {
+  text-decoration: underline;
+}
+
+.menu-item:has(a:hover) .menu-item-title {
+  color: red;
+}
