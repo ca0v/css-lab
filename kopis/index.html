@@ -9,6 +9,7 @@
     </title>
   </head>
   <body>
+    <div class="background-image"></div>
     <header>
       <div class="logo">
         <div class="title">KOPIS</div>
@@ -36,13 +37,24 @@
         <p class="goals slinky">Improve Reliability</p>
       </div>
     </main>
+    <div class="grid-3-2">
+      <section>
+        <h1><u>Reliably Grow</u> with Kopis</h1>
+        <p>
+          Growing businesses are often hampered by systems and tech that can't
+          scale effectively or keep up with their changing needs, which leads to
+          avoidable errors. With custom software, ERP, and technology solutions
+          from Kopis, you can reliably scale and grow your business.
+        </p>
+      </section>
+    </div>
     <div class="popup-menu hidden"></div>
     <style></style>
     <script>
       const menu = {
         "DIGITAL PRODUCT DEVELOPMENT": [
-          "Software Development",
-          "App Development",
+          { title: "Software Development", url: "software-development.html" },
+          { title: "App Development", url: "app-development.html" },
           "Modernization",
           "UI/UX",
         ],
@@ -80,7 +92,7 @@
         const menuItems = menuKeys.map((key) => {
           const subMenu = menu[key]
           const subMenuItems = subMenu.map((item) => {
-            return `<a href="#">${item}</a>`
+            return `<a href="${item.url || "#"}">${item.title || item}</a>`
           })
           return `<div class="menu-item">
             <div class="menu-item-title">${key}</div>
@@ -100,5 +112,10 @@
         popup.classList.remove("hidden")
       })
     </script>
+    <style>
+      body {
+        color: white;
+      }
+    </style>
   </body>
 </html>

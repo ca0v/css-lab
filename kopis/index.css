@@ -4,21 +4,21 @@
 }
 
 body {
-  background-color: #2531c0ee;
-  color: white;
   font-family: "Roboto", sans-serif;
+  font-size: 16pt;
   margin: 0;
 }
 
-header {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  /* vertically center each element */
-  align-items: center;
-  justify-items: first last;
+.background-image {
+  position: absolute;
+  background-image: linear-gradient(to bottom right, #541db8ee, #2a90e5ee);
+  background-color: #2531c0;
+  width: 100%;
+  height: 100%;
+  z-index: -1;
 }
 
-header > .logo {
+.logo {
   display: flex;
   flex-direction: row;
   height: 8rem;
@@ -26,7 +26,7 @@ header > .logo {
   width: 16rem;
 }
 
-header > .logo > .title {
+.logo > .title {
   width: 10rem;
   height: 8rem;
   background-color: white;
@@ -42,10 +42,16 @@ header > .logo > .title {
 }
 
 header > nav {
+  position: absolute;
+  top: 0;
+  right: 0;
   display: flex;
   justify-content: space-between;
   align-items: center;
   gap: 2rem;
+  width: auto;
+  margin-top: 3rem;
+  font-size: 1rem;
 }
 
 nav a,
@@ -123,8 +129,9 @@ a.call-to-action:hover::after {
 
 main {
   /* display in center of screen */
-  margin-top: 6em;
-
+  color: black;
+  margin-top: 6rem;
+  margin-left: 6rem;
   display: flex;
   flex-direction: column;
 }
@@ -132,6 +139,35 @@ main {
 main p {
   margin: 0;
   padding: 0;
+}
+
+.sub-title {
+  text-transform: uppercase;
+  font-size: 0.9rem;
+  letter-spacing: 0.1rem;
+  color: red;
+}
+
+.topics {
+  display: flex;
+  flex-direction: row;
+  gap: 2rem;
+  justify-content: center;
+}
+
+.topics > section {
+  width: 20rem;
+}
+.topics > section > h2 {
+  font-size: large;
+}
+
+h1.title {
+  margin-bottom: 0;
+}
+h1 > u {
+  text-decoration: none;
+  border-bottom: 0.3rem solid red;
 }
 
 .company-solutions {
@@ -222,4 +258,31 @@ main p {
 
 .menu-item:has(a:hover) .menu-item-title {
   color: red;
+}
+
+.bullet-list {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  margin: 2rem;
+  row-gap: 1rem;
+  column-gap: 2rem;
+  list-style-type: square;
+}
+
+.bullet-list > li {
+  white-space: nowrap;
+}
+
+.grid-2-3 {
+  display: grid;
+  grid-template-columns: 2fr 3fr;
+  column-gap: 2rem;
+  margin-right: 3rem;
+}
+
+.grid-3-2 {
+  display: grid;
+  grid-template-columns: 3fr 2fr;
+  column-gap: 2rem;
+  margin-left: 3rem;
 }
