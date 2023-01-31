@@ -13,21 +13,19 @@
     <header>
       <div class="logo">
         <div class="title">KOPIS</div>
-        <div class="triangle-100"></div>
       </div>
       <nav>
         <div class="dropdown solutions">Solutions</div>
         <a href="./smart-government.html">Smart Government</a>
         <a href="./case-studies.html">Case Studies</a>
         <div class="flex-row-tight">
-          <div class="triangle-50 red"></div>
           <a class="call-to-action" href="./discovery-call.html"
-            >Book a discovery call</a
+            ><div class="unskew">Book a discovery call</div></a
           >
         </div>
       </nav>
     </header>
-    <main>
+    <main class="text-white">
       <p class="company-solutions">
         Custom Software, Product Development & Tech Solutions
       </p>
@@ -36,20 +34,25 @@
         <p>Come To&nbsp;</p>
         <p class="goals slinky">Improve Reliability</p>
       </div>
+      <br />
+      <br />
+      <div class="grid-3-2">
+        <section>
+          <h1 class="text-3xl"><u>Reliably Grow</u> with Kopis</h1>
+          <p>
+            Growing businesses are often hampered by systems and tech that can't
+            scale effectively or keep up with their changing needs, which leads
+            to avoidable errors. With custom software, ERP, and technology
+            solutions from Kopis, you can reliably scale and grow your business.
+          </p>
+        </section>
+      </div>
     </main>
-    <div class="grid-3-2">
-      <section>
-        <h1><u>Reliably Grow</u> with Kopis</h1>
-        <p>
-          Growing businesses are often hampered by systems and tech that can't
-          scale effectively or keep up with their changing needs, which leads to
-          avoidable errors. With custom software, ERP, and technology solutions
-          from Kopis, you can reliably scale and grow your business.
-        </p>
-      </section>
+    <div
+      class="bg-white popup-menu-outer hidden outline-black outline-1 outline -skew-x-12"
+    >
+      <div class="skew-x-12 popup-menu"></div>
     </div>
-    <div class="popup-menu hidden"></div>
-    <style></style>
     <script>
       const menu = {
         "DIGITAL PRODUCT DEVELOPMENT": [
@@ -108,8 +111,8 @@
       // on hover of solutions, show popup
       const solutions = document.querySelector(".solutions")
       solutions.addEventListener("mouseenter", () => {
-        const popup = document.querySelector(".popup-menu")
-        popup.classList.remove("hidden")
+        const popup = document.querySelector(".popup-menu-outer")
+        popup.classList.toggle("hidden")
       })
     </script>
     <style>

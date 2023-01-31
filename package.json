@@ -1,0 +1,23 @@
+{
+  "name": "css-lab",
+  "version": "1.0.0",
+  "description": "## Samples",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ca0v/css-lab.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/ca0v/css-lab/issues"
+  },
+  "homepage": "https://github.com/ca0v/css-lab#readme",
+  "devDependencies": {
+    "tailwindcss": "^3.2.4"
+  }
+}
