@@ -537,6 +537,14 @@ video {
   margin-top: 0.25rem;
 }
 
+.ml-5 {
+  margin-left: 1.25rem;
+}
+
+.table {
+  display: table;
+}
+
 .grid {
   display: grid;
 }
@@ -545,12 +553,20 @@ video {
   display: contents;
 }
 
+.grow {
+  flex-grow: 1;
+}
+
 .list-decimal {
   list-style-type: decimal;
 }
 
 .list-disc {
   list-style-type: disc;
+}
+
+.grid-cols-4 {
+  grid-template-columns: repeat(4, minmax(0, 1fr));
 }
 
 .gap-8 {
@@ -580,6 +596,10 @@ video {
 
 .capitalize {
   text-transform: capitalize;
+}
+
+.underline-offset-1 {
+  text-underline-offset: 1px;
 }
 
 body {

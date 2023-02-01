@@ -3,108 +3,460 @@
 </script>
 
 <div class="body p-1">
-    <header class="pt-5 pl-5">
-        <div class="title-area">
-            <img class="logo" src="https://kopisusa.com/wp-content/uploads/2021/02/logo-w@2x.png" alt="Kopis Logo" />
-            <p class="kern-10 text-xl uppercase">Coffee Questions</p>
-        </div>
-    </header>
-    <main class="mt-10 ml-10">
-        <section>
-            <h2 class="kern-10 text-xl uppercase">What is Kopis?</h2>
-            <p>Kopis builds the software that runs Greenville businesses</p>
-            <br/>
-            <details x-open>
-                <summary>Tell me more!</summary>
-                <p>Kopis is a software consultancy with four defining principles:</p>
-                <ul class="list-decimal m-5">
-                    <li>Lead</li>
-                    <li>Respect</li>
-                    <li>Impact</li>
-                    <li>Simplify</li>
-                </ul>
-                <div class="mt-5 grid gap-8">
-                    <div class="mb-1">
-                        <p class="mb-1">To <dfn>Lead</dfn> is to be a confident in knowing where they are going, 
-                        which requires a deep understanding of the problem and the solution.  
-                        <br/>A leader must continually evaluate and be prepared to adjust these three things:</p>
-                        <ul class="list-decimal m-5">
-                            <li class="capitalize">what you know</li>
-                            <li class="capitalize">what you know you don't know</li>
-                            <li class="capitalize">what you don't know you don't know</li>
-                        </ul>
-                    </div>
-                    <div>
-                        <p>We have a natural <dfn>respect</dfn> for talented colleagues, but it is also import to be mindful of those we don't agree with.
-                            A productive environment requires that we all get along.  
-                            Come prepared to <u>play nice</u> and share your insights and concerns in a way that is encouraging and productive.
-                            This can demand selflessness and humility and empathy.
-                            Be fair and honest and kind.
-                        </p>
-                    </div>
-                    <div>
-                        <p class="mb-1">To <dfn>Impact</dfn> is to effect or influence.  In product and customer relational terms, it means to steadily progress.</p>
-                        <ul class="list-disc m-5">
-                            <li>Understand the problem</li>
-                            <li>Articulate the problem</li>
-                            <li>Breakdown the problem into smaller problems</li>
-                            <li>Provided incremental solutions</li>
-                            <li>Adapt and Iterate logically and with consensus</li>
-                        </ul>
-                        <p class="mt-1">Each step above impacts the relationship with the client, 
-                            instilling confidence in the process and growing trust in Kopis.</p>
-                        <p class="mt-1">Each misstep has the opposite effect. Software is hard to build and 
-                            transparency is an essential component in making a positive impact.</p>
-                    </div>
-                    <div>
-                        <p>To <dfn>Simplify</dfn> is to reduce the complexity of a system by applying  diligence and ingenuity.</p>
-                        <p>The software development process offers many opportunities to simplify and it is the defining element of problem solving.
-                            <ul class="list-disc m-5">
-                                <li>The software development process is a series of steps that can be broken down (<u>simplified</u>) into smaller steps.</li>
-                                <li>Refactoring is the process of <u>simplifying</u> the codebase by removing duplication and improving readability.</li>
-                                <li>UX design is the process of <u>simplifying</u> the user experience by removing unnecessary steps and improving the flow.</li>
-                            </ul>
-                    </div>
-                </div>
-            </details>
-        </section>
-    </main>
+	<header class="pt-5 pl-5">
+		<div class="title-area">
+			<img
+				class="logo"
+				src="https://kopisusa.com/wp-content/uploads/2021/02/logo-w@2x.png"
+				alt="Kopis Logo"
+			/>
+			<p class="kern-10 text-xl uppercase">Coffee Questions</p>
+		</div>
+	</header>
+	<main class="mt-10 ml-10">
+		<section>
+			<h2 class="kern-10 text-xl uppercase">What is Kopis?</h2>
+			<p>
+				True or False? <dfn>Kopis</dfn> is derived from the a Greek word <ruby>κοπίς</ruby>, which
+				means "to cut, to strike." It is the name of a type of sword suited for combat while sitting
+				atop a horse.
+			</p>
+			<br />
+			<details>
+				<summary>Reveal the answer!</summary>
+				<p>False.<br />A <dfn>Kopis</dfn> is "a cup of bitter coffee".</p>
+				<br />
+				<p>
+					No, it's actually true. But <i>Kopis</i> is also the name of a company that builds the
+					software that runs Greenville businesses.
+					<i>Kopis</i> is aptly named because one of its defining principles,<u>simplify</u>,
+					requires find the essence of the solution, cutting away at the non-essential.
+					<br />
+					<br />
+					<dfn>Kopis</dfn> is the software consultancy with these four defining principles:
+				</p>
+				<ul class="list-decimal m-5">
+					<li>Lead</li>
+					<li>Respect</li>
+					<li>Impact</li>
+					<li>Simplify</li>
+				</ul>
+				<div class="mt-5 grid gap-8">
+					<div class="mb-1">
+						<p class="mb-1">
+							To <dfn>Lead</dfn> is to be a confident in knowing where they are going, which
+							requires a deep understanding of the problem and the solution.
+							<br />A leader must continually evaluate and be prepared to adjust these three things:
+						</p>
+						<ul class="list-decimal m-5">
+							<li class="capitalize">what you know</li>
+							<li class="capitalize">what you know you don't know</li>
+							<li class="capitalize">what you don't know you don't know</li>
+						</ul>
+					</div>
+					<div>
+						<p>
+							We have a natural <dfn>respect</dfn> for talented colleagues, but it is also import to
+							be mindful of those we don't agree with. A productive environment requires that we all
+							get along. Come prepared to <u>play nice</u> and share your insights and concerns in a
+							way that is encouraging and productive. This can demand selflessness and humility and empathy.
+							Be fair and honest and kind.
+						</p>
+					</div>
+					<div>
+						<p class="mb-1">
+							To <dfn>Impact</dfn> is to effect or influence. In product and customer relational terms,
+							it means to steadily progress.
+						</p>
+						<ul class="list-disc m-5">
+							<li>Understand the problem</li>
+							<li>Articulate the problem</li>
+							<li>Breakdown the problem into smaller problems</li>
+							<li>Provided incremental solutions</li>
+							<li>Adapt and Iterate logically and with consensus</li>
+						</ul>
+						<p class="mt-1">
+							Each step above impacts the relationship with the client, instilling confidence in the
+							process and growing trust in Kopis.
+						</p>
+						<p class="mt-1">
+							Each misstep has the opposite effect. Software is hard to build and transparency is an
+							essential component in making a positive impact.
+						</p>
+					</div>
+					<div>
+						<p>
+							To <dfn>Simplify</dfn> is to reduce the complexity of a system by applying diligence and
+							ingenuity.
+						</p>
+						<p>
+							The software development process offers many opportunities to simplify and it is the
+							defining element of problem solving.
+						</p>
+						<ul class="list-disc m-5">
+							<li>
+								The software development process is a series of steps that can be broken down (<u
+									>simplified</u
+								>) into smaller steps.
+							</li>
+							<li>
+								Refactoring is the process of <u>simplifying</u> the codebase by removing duplication
+								and improving readability.
+							</li>
+							<li>
+								UX design is the process of <u>simplifying</u> the user experience by removing unnecessary
+								steps and improving the flow.
+							</li>
+						</ul>
+					</div>
+				</div>
+			</details>
+		</section>
+		<section>
+			<h2 class="kern-10 text-xl uppercase">How does Kopis provide accurate estimates?</h2>
+			<p>True or False? We guess.</p>
+			<br />
+			<details>
+				<summary>Reveal the answer!</summary>
+				<p>
+					Correct. The only way to know how long something will take is to do it. Since every
+					project is unique, that is simply not possible. A single person cannot estimate the number
+					of gumballs in a jar, but a crowd can. We are not counting gumballs, so we produce
+					countable parts. Accurate estimates require a deep discovery phase where objectives are
+					identified, the domain language is established, the scope is "understood", and the team
+					can begins to organize and identify the work.
+				</p>
+				<ul class="list-disc ml-5">
+					<li>Agree on the problem</li>
+					<li>Agree on the solution</li>
+					<li>Agree on the decomposition of work</li>
+					<li>Poll teammates for estimates</li>
+					<li>Calculate the (weighted) average</li>
+				</ul>
+				<br />
+				<p>
+					Code is the ultimate decomposition tool and at some point the design process must move
+					into the IDE. Before this happens it is essential that all the "things we know we don't
+					know" are identified and a list of "ilities" has been considered, reducing the "things we
+					didn't know we didn't know" and increasing the "things we know we know" and the "things we
+					know we don't know".
+					<br />Only then does discovery moves into the code laboratory. Once the results of those
+					experiments are fed back into the discovery faze and no new unknown emerge, we consider
+					the discovery phase complete and begin computing estimates.
+				</p>
+				<br />
+				<details>
+					<summary>What are "Ilities"???</summary>
+					<p>
+						The <dfn>ilities</dfn> of software architecture refer to various qualities or characteristics
+						that good software architecture should possess. Some of the most common "ilities" include:
+					</p>
+					<br />
+					<dl>
+						<dt>Scalability</dt>
+						<dd>
+							The ability of the software to handle increasing workloads without a decrease in
+							performance.
+						</dd>
+						<dt>Availability</dt>
+						<dd>the degree to which the software is operational and accessible when required.</dd>
+						<dt>Maintainability</dt>
+						<dd>
+							the ease with which the software can be modified to correct faults, improve its
+							performance, or adapt to changing environments.
+						</dd>
+						<dt>Usability</dt>
+						<dd>the ease with which the software can be used by end-users.</dd>
+						<dt>Security</dt>
+						<dd>
+							the measures taken to protect the software from unauthorized access or malicious
+							attacks.
+						</dd>
+						<dt>Testability</dt>
+						<dd>
+							the ease with which the software can be tested to ensure that it meets specified
+							requirements.
+						</dd>
+						<dt>Portability</dt>
+						<dd>
+							the ease with which the software can be transferred from one environment to another.
+						</dd>
+					</dl>
+					<dl>
+						<dt>Flexibility</dt>
+						<dd>the ability of the software to adapt to changing requirements and environments.</dd>
+						<dt>Reliability</dt>
+						<dd>
+							the dependability of the software to perform its intended functions under specified
+							conditions.
+						</dd>
+						<dt>Performance</dt>
+						<dd>the speed and efficiency with which the software carries out its functions.</dd>
+						<dt>Manageability</dt>
+						<dd>the ease with which the software can be monitored, managed, and controlled.</dd>
+						<dt>Interoperability</dt>
+						<dd>the ability of the software to work effectively with other software systems.</dd>
+						<dt>Reusability</dt>
+						<dd>
+							the ability of the software to be used in multiple contexts without modification.
+						</dd>
+						<dt>Extensibility</dt>
+						<dd>
+							the ability of the software to be expanded or modified to accommodate new features or
+							functions.
+						</dd>
+						<dt>Modularity</dt>
+						<dd>
+							the degree to which the software can be divided into independent, functional
+							components.
+						</dd>
+						<dt>Robustness</dt>
+						<dd>
+							the ability of the software to continue functioning correctly even in the presence of
+							unexpected inputs or errors.
+						</dd>
+						<dt>Compatibility</dt>
+						<dd>
+							the ability of the software to work correctly with other systems and technologies.
+						</dd>
+						<dt>Efficiency</dt>
+						<dd>the ability of the software to use resources effectively and minimize waste.</dd>
+						<dt>Resilience</dt>
+						<dd>
+							the ability of the software to recover from failures and continue functioning
+							correctly.
+						</dd>
+					</dl>
+					<dl>
+						<dt>Configurability</dt>
+						<dd>
+							the ability of the software to be adjusted or configured to meet specific needs or
+							requirements.
+						</dd>
+						<dt>Localizability</dt>
+						<dd>
+							the ability of the software to be adapted for use in different locales or regions.
+						</dd>
+						<dt>Adaptability</dt>
+						<dd>
+							the ability of the software to be modified or adapted to changing requirements or
+							environments.
+						</dd>
+						<dt>Portability</dt>
+						<dd>
+							the ability of the software to be executed on different hardware or operating systems
+							with minimal modification.
+						</dd>
+						<dt>Cost-effectiveness</dt>
+						<dd>
+							the ability of the software to be developed, deployed, and maintained at a reasonable
+							cost.
+						</dd>
+						<dt>Accessibility</dt>
+						<dd>the ability of the software to be used by people with disabilities.</dd>
+						<dt>Auditability</dt>
+						<dd>
+							the ability of the software to be audited to determine if it is functioning correctly
+							and securely.
+						</dd>
+						<dt>Disaster recovery</dt>
+						<dd>
+							the ability of the software to recover from disasters or failures and continue
+							functioning correctly.
+						</dd>
+						<dt>Backward compatibility</dt>
+						<dd>
+							the ability of the software to work with earlier versions of itself or other software
+							systems.
+						</dd>
+						<dt>Forward compatibility</dt>
+						<dd>
+							the ability of the software to work with future versions of itself or other software
+							systems.
+						</dd>
+						<dt>Ease of deployment</dt>
+						<dd>
+							the ease with which the software can be deployed or installed into a production
+							environment.
+						</dd>
+						<dt>Ease of operation</dt>
+						<dd>the ease with which the software can be operated or used by end-users.</dd>
+					</dl>
+					<dl>
+						<dt>Interoperability</dt>
+						<dd>the ability of the software to work with other software systems.</dd>
+						<dt>Performance efficiency</dt>
+						<dd>the ability of the software to perform its functions quickly and efficiently.</dd>
+						<dt>Robustness</dt>
+						<dd>
+							the ability of the software to handle unexpected inputs and conditions without
+							failure.
+						</dd>
+						<dt>Recovery</dt>
+						<dd>
+							the ability of the software to recover from failures and continue functioning
+							correctly.
+						</dd>
+						<dt>Resilience</dt>
+						<dd>
+							the ability of the software to withstand stress and recover from adverse conditions.
+						</dd>
+						<dt>Extensibility</dt>
+						<dd>
+							the ability of the software to be extended or added to in the future to meet new
+							requirements.
+						</dd>
+						<dt>Replaceability</dt>
+						<dd>
+							the ability of the software to be replaced by another software system without
+							significant disruption.
+						</dd>
+						<dt>Reusability</dt>
+						<dd>
+							the ability of the software to be reused in other software systems or applications.
+						</dd>
+						<dt>Transferability</dt>
+						<dd>
+							the ability of the software to be transferred from one system to another with minimal
+							modification.
+						</dd>
+						<dt>Compatibility</dt>
+						<dd>
+							the ability of the software to work with other software systems, hardware systems, or
+							environments.
+						</dd>
+					</dl>
+					<br />
+					<p>
+						It is a cute name for a long and non-standard list of widgets you can pack into the
+						software machinery. They are not meant to be formal areas of design, but specialized
+						lights designed to probe the various dark corners are the problem domain. Here are some
+						more of a much larger list of concerns that may appear be relevant to the solution:
+					</p>
+					<br />
+					<ul class="grid grid-fit">
+						<li>Authentication</li>
+						<li>Authorization</li>
+						<li>Access Control</li>
+						<li>Configuration</li>
+						<li>Deployment</li>
+						<li>Documentation</li>
+						<li>Encryption</li>
+						<li>Error Handling</li>
+						<li>Logging</li>
+						<li>Monitoring</li>
+						<li>Testing</li>
+						<li>Usability</li>
+						<li>Version Control</li>
+					</ul>
+				</details>
+			</details>
+		</section>
+		<section>
+			<h2 class="kern-10 text-xl uppercase">Is working for <i>Kopis</i> a job or an adventure?</h2>
+			<p>True or False? Working at Kopis is an adventure?</p>
+			<br />
+			<details open>
+				<summary>Do you really need to know?</summary>
+				<p>
+					False. It is a job. But like all things in life, you get out of it what you put into it
+					and if you don't put enough into it you should get out of it. That being said, here are a
+					few things we do to make it a little more fun.
+				</p>
+				<br />
+				<h2>Gumballs</h2>
+				<p>
+					Remember those "ilities" we were talking about earlier? Yeah, we actually printed them on
+					gumballs! When we are taking on a new project we get around the table and Andy gives us a
+					stack of quarters. If the project is large and the client is willing, he give us a lot of
+					quarters. We take the first quarter to the gumball machine, drop in the quarter and see
+					what comes out! Occasionally it makes no sense, but generally there is applicability
+					(yeah, I know). Once, while working on a church landing page, we got "resurrectablility".
+					We all laughed and then we got to work. We were able to resurrect the church's website
+					with the help of a few more gumballs.
+					<br />
+					Why do we do it this way instead of going through a long list? Because it is fun and it gets
+					us talking about the project. We get to know each other better and we get to know the project
+					better. It is a great way to start a project. At some point, the real work begins and we take
+					a more systematic approach.
+				</p>
+				<br />
+				<h2>Pranks</h2>
+				<p>
+					You literally would not believe the lengths to which some of our employees go to ensure
+					you get your fair share of humility. I'll simply direct you to <u
+						><a href="https://kopisusa.com/art-good-office-prank/">The Art of a Good Office Prank</a
+						>.</u
+					>
+				</p>
+				<br />
+				<h2>Pair Programming</h2>
+				<p>
+					Let's face it, we are pretty good but we are not invincible. We all enjoy cranking out
+					code from the flow-zone but sometimes we get stuck. Some problems are hard and rubber duck
+					debugging is not enough. When that happens, we help each other get better. One way we do
+					this by pairing up and working through the problem together. This is an aspect of <u
+						>respect</u
+					> and a way we grow professionally and as human beings.
+				</p>
+			</details>
+		</section>
+	</main>
 </div>
 
 <style lang="postcss">
-    .body {
-        color: rgb(91, 91, 194);
-        margin: 0;
-    }
-    
-    .logo {
-        height: 4rem;
-    }
-    .kern-10 {
-        letter-spacing: 0.1em;
-    }
+	.body {
+		color: rgb(91, 91, 194);
+		margin: 0;
+	}
 
-    h1 {
-        margin: 0;
-    }
+	.logo {
+		height: 4rem;
+	}
+	.kern-10 {
+		letter-spacing: 0.1em;
+	}
 
-    ul > li {
-        line-height: 2rem;        
-    }
+	h1 {
+		margin: 0;
+	}
 
-    details > summary {
-        cursor: pointer;
-    }
+	ul > li {
+		line-height: 2rem;
+	}
 
-    details[open] > summary {
-        display: none;
-    }
+	details > summary {
+		cursor: pointer;
+	}
 
+	details[open] > summary {
+		display: none;
+	}
 
-    dfn,
-    u {
-        text-decoration: double;
-        border-bottom: 0.1rem solid red;
-    }
+	dfn,
+	u {
+		text-decoration: double;
+		border-bottom: 0.1rem solid red;
+	}
 
+	main > section {
+		margin-bottom: 2rem;
+	}
+
+	dl > dt {
+		font-weight: bold;
+	}
+
+	dl > dd {
+		margin-left: 1rem;
+		margin-bottom: 1rem;
+	}
+
+	.grid-fit {
+		grid-template-columns: repeat(auto-fit, minmax(10rem, 1fr));
+	}
+
+	h2 {
+		margin-bottom: 1rem;
+	}
 </style>
