@@ -4,7 +4,7 @@
   "description": "## Samples",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "css": "tailwindcss -i ./tailwind-index.css -o ./index.css --watch"
   },
   "repository": {
     "type": "git",
