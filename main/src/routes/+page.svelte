@@ -11,26 +11,28 @@
 				alt="Kopis Logo"
 			/>
 			<p class="kern-10 text-xl uppercase">Coffee Questions</p>
+			<p class="text-xs">DISCLAIMER - this is a fake site</p>
 		</div>
+		<hr />
 	</header>
 	<main class="mt-10 ml-10">
 		<section>
 			<h2 class="kern-10 text-xl uppercase">What is Kopis?</h2>
 			<p>
 				True or False? <dfn>Kopis</dfn> is derived from the a Greek word <ruby>κοπίς</ruby>, which
-				means "to cut, to strike." It is the name of a type of sword suited for combat while sitting
-				atop a horse.
+				means "to cut, to strike." It is the name of a type of sword suitable for combat while
+				sitting atop a horse.
 			</p>
 			<br />
 			<details>
 				<summary>Reveal the answer!</summary>
-				<p>False.<br />A <dfn>Kopis</dfn> is "a cup of bitter coffee".</p>
+				<p>False.<br />A <dfn>Kopis</dfn> is a cup of bitter coffee.</p>
 				<br />
 				<p>
-					No, it's actually true. But <i>Kopis</i> is also the name of a company that builds the
+					Just kidding, it's a sword, but <i>Kopis</i> is also the name of a company that builds the
 					software that runs Greenville businesses.
-					<i>Kopis</i> is aptly named because one of its defining principles,<u>simplify</u>,
-					requires find the essence of the solution, cutting away at the non-essential.
+					<i>Kopis</i> is aptly named because one of its defining principles, to <u>simplify</u>,
+					requires cutting away all at the non-essentials.
 					<br />
 					<br />
 					<dfn>Kopis</dfn> is the software consultancy with these four defining principles:
@@ -46,39 +48,41 @@
 						<p class="mb-1">
 							To <dfn>Lead</dfn> is to be a confident in knowing where they are going, which
 							requires a deep understanding of the problem and the solution.
-							<br />A leader must continually evaluate and be prepared to adjust these three things:
+							<br />A leader must continually evaluate and be prepared to adjust to three things:
 						</p>
 						<ul class="list-decimal m-5">
-							<li class="capitalize">what you know</li>
-							<li class="capitalize">what you know you don't know</li>
-							<li class="capitalize">what you don't know you don't know</li>
+							<li class="capitalize">What you know</li>
+							<li class="capitalize">What you know you don't know</li>
+							<li class="capitalize">What you don't know you don't know</li>
 						</ul>
 					</div>
 					<div>
 						<p>
-							We have a natural <dfn>respect</dfn> for talented colleagues, but it is also import to
-							be mindful of those we don't agree with. A productive environment requires that we all
-							get along. Come prepared to <u>play nice</u> and share your insights and concerns in a
-							way that is encouraging and productive. This can demand selflessness and humility and empathy.
-							Be fair and honest and kind.
+							To <dfn>respect</dfn> is to show a natural appreciation for talented colleagues, but
+							it is also an appreciation for those we routinely outperform. A productive environment
+							requires that we all get grow. Come prepared to <u>play nice</u> and share your insights
+							and concerns in a way that is encouraging and productive. This can demand selflessness
+							and humility and empathy. Be fair, be honest, be kind.
 						</p>
 					</div>
 					<div>
 						<p class="mb-1">
-							To <dfn>Impact</dfn> is to effect or influence. In product and customer relational terms,
-							it means to steadily progress.
+							To <dfn>Impact</dfn> is to effect or influence. In both product and relational terms, it
+							means to steadily progress. Correct and purposeful software has sustained impact, but seeing
+							a product mature can also positively impact us. Who does not enjoy seeing order emerge?
+						</p>
+						<p class="mt-1">
+							There is design-impact resulting from working openly. Each step forward impacts the
+							relationship with the client, instilling confidence in the process and growing trust
+							in Kopis.
 						</p>
 						<ul class="list-disc m-5">
 							<li>Understand the problem</li>
 							<li>Articulate the problem</li>
-							<li>Breakdown the problem into smaller problems</li>
+							<li>Divide the problem</li>
 							<li>Provided incremental solutions</li>
 							<li>Adapt and Iterate logically and with consensus</li>
 						</ul>
-						<p class="mt-1">
-							Each step above impacts the relationship with the client, instilling confidence in the
-							process and growing trust in Kopis.
-						</p>
 						<p class="mt-1">
 							Each misstep has the opposite effect. Software is hard to build and transparency is an
 							essential component in making a positive impact.
@@ -348,6 +352,7 @@
 						<li>Testing</li>
 						<li>Usability</li>
 						<li>Version Control</li>
+						<li>Network Indifference</li>
 					</ul>
 				</details>
 			</details>
@@ -356,12 +361,12 @@
 			<h2 class="kern-10 text-xl uppercase">Is working for <i>Kopis</i> a job or an adventure?</h2>
 			<p>True or False? Working at Kopis is an adventure?</p>
 			<br />
-			<details open>
-				<summary>Do you really need to know?</summary>
+			<details>
+				<summary>Reveal the answer!</summary>
 				<p>
-					False. It is a job. But like all things in life, you get out of it what you put into it
-					and if you don't put enough into it you should get out of it. That being said, here are a
-					few things we do to make it a little more fun.
+					Half True. It is a job. But like all things in life, you get out of it what you put into
+					it and if you don't put enough into it you should get out of it. That being said, here are
+					a few things we do to make it a little more fun.
 				</p>
 				<br />
 				<h2>Gumballs</h2>
@@ -375,10 +380,10 @@
 					We all laughed and then we got to work. We were able to resurrect the church's website
 					with the help of a few more gumballs.
 					<br />
-					Why do we do it this way instead of going through a long list? Because it is fun and it gets
-					us talking about the project. We get to know each other better and we get to know the project
-					better. It is a great way to start a project. At some point, the real work begins and we take
-					a more systematic approach.
+					Why do we do it this way instead of going through an organized list? Because it is fun and
+					it gets us talking about the project. We get to know each other better and we get to know the
+					project better. It is a great way to start a project. A more systematic approach soon follows,
+					but the gumball approach gives us all something to chew on (yup).
 				</p>
 				<br />
 				<h2>Pranks</h2>
@@ -401,6 +406,31 @@
 				</p>
 			</details>
 		</section>
+		<section>
+			<h2 class="kern-10 text-xl uppercase">How do clients stay informed?</h2>
+			<p>True or False? We have an automated facsimile service that pushes the daily changelog.</p>
+			<br />
+			<details>
+				<summary>Reveal the answer!</summary>
+				<p>
+					False. Our clients stay informed about the progress of their project through our <u
+						>live access</u
+					>
+					program. Our first priority is to build a CI/CD pipeline that puts the latest builds in front
+					of our client as pragmatically as possible. When the architecture is still unknown this may
+					be a link to a single README file detailing our design progress. For web it is an endpoint.
+					For Desktop as well as iOS and Android we have in-app upgrade notifications. These updates
+					require two-factor authentication so <b>only</b> stakeholders see them.
+				</p>
+				<p>
+					Software development is a complex process and is rarely a steady progression. Redesigns
+					occur, functionality breaks, sites crash, but our customers learn to appreciate these
+					challenges and through it all, we not only value their feedback, but we insist on it
+					throughout the journey with in-app surveys and A/B testing.
+				</p>
+				<p>This level of transparency and vulnerability is the iron that keeps Kopis sharp.</p>
+			</details>
+		</section>
 	</main>
 </div>
 
@@ -408,6 +438,7 @@
 	.body {
 		color: rgb(91, 91, 194);
 		margin: 0;
+		max-width: 80rem;
 	}
 
 	.logo {
@@ -458,5 +489,15 @@
 
 	h2 {
 		margin-bottom: 1rem;
+	}
+
+	/* make header sticky */
+	header {
+		position: sticky;
+		top: 0;
+		z-index: 1;
+		/* opaque */
+		background-color: rgb(10, 10, 58);
+		padding: 1rem;
 	}
 </style>
