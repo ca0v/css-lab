@@ -29,10 +29,10 @@
 				<p>False.<br />A <dfn>Kopis</dfn> is a cup of bitter coffee.</p>
 				<br />
 				<p>
-					Just kidding, it's a sword, but <i>Kopis</i> is also the name of a company that builds the
-					software that runs Greenville businesses.
+					No, it's a sword, but <i>Kopis</i> is also the name of a company that builds software for
+					Greenville businesses.
 					<i>Kopis</i> is aptly named because one of its defining principles, to <u>simplify</u>,
-					requires cutting away all at the non-essentials.
+					requires cutting away non-essentials.
 					<br />
 					<br />
 					<dfn>Kopis</dfn> is the software consultancy with these four defining principles:
@@ -123,27 +123,28 @@
 			<details>
 				<summary>Reveal the answer!</summary>
 				<p>
-					Correct. The only way to know how long something will take is to do it. Since every
-					project is unique, that is simply not possible. A single person cannot estimate the number
-					of gumballs in a jar, but a crowd can. We are not counting gumballs, so we produce
-					countable parts. Accurate estimates require a deep discovery phase where objectives are
-					identified, the domain language is established, the scope is "understood", and the team
-					can begins to organize and identify the work.
+					Correct. The only way to know how long something will take is to do it. Every project is
+					unique and knowing the duration ahead of time is simply not possible. <br />
+					A single person cannot estimate the number of gumballs in a jar, but a crowd can. We are not
+					counting gumballs, but we produce countable parts. Accurate estimates require a
+					<u>deep discovery</u>
+					phase where objectives are identified, the domain language is established, the scope is "understood",
+					and the team can begins to organize and identify the work.
 				</p>
 				<ul class="list-disc ml-5">
-					<li>Agree on the problem</li>
-					<li>Agree on the solution</li>
-					<li>Agree on the decomposition of work</li>
+					<li>Agree with the customer on the problem</li>
+					<li>Agree with the customer and the team on the solution</li>
+					<li>Agree with the team on the decomposition of work</li>
 					<li>Poll teammates for estimates</li>
 					<li>Calculate the (weighted) average</li>
 				</ul>
 				<br />
 				<p>
 					Code is the ultimate decomposition tool and at some point the design process must move
-					into the IDE. Before this happens it is essential that all the "things we know we don't
-					know" are identified and a list of "ilities" has been considered, reducing the "things we
-					didn't know we didn't know" and increasing the "things we know we know" and the "things we
-					know we don't know".
+					into the IDE. Code is also specialized and time intensive, so before coding begins it is
+					essential that all the "things we know we don't know" are identified and a list of
+					"ilities" has been considered, reducing the "things we didn't know we didn't know" and
+					increasing both the "things we know we know" and the "things we know we don't know".
 					<br />Only then does discovery moves into the code laboratory. Once the results of those
 					experiments are fed back into the discovery faze and no new unknown emerge, we consider
 					the discovery phase complete and begin computing estimates.
@@ -364,9 +365,7 @@
 			<details>
 				<summary>Reveal the answer!</summary>
 				<p>
-					Half True. It is a job. But like all things in life, you get out of it what you put into
-					it and if you don't put enough into it you should get out of it. That being said, here are
-					a few things we do to make it a little more fun.
+					False. It is a job, but here are a few things we do to make it a little more adventurous.
 				</p>
 				<br />
 				<h2>Gumballs</h2>
@@ -385,6 +384,12 @@
 					project better. It is a great way to start a project. A more systematic approach soon follows,
 					but the gumball approach gives us all something to chew on (yup).
 				</p>
+				<h2>Puzzles</h2>
+				<p>
+					We believe in "ilites" so much that we have created hexagon-shaped puzzle pieces that we
+					assemble after a project has been completed to memorialize the archhitectural blueprint of
+					that solution.
+				</p>
 				<br />
 				<h2>Pranks</h2>
 				<p>
@@ -397,12 +402,11 @@
 				<br />
 				<h2>Pair Programming</h2>
 				<p>
-					Let's face it, we are pretty good but we are not invincible. We all enjoy cranking out
-					code from the flow-zone but sometimes we get stuck. Some problems are hard and rubber duck
-					debugging is not enough. When that happens, we help each other get better. One way we do
-					this by pairing up and working through the problem together. This is an aspect of <u
-						>respect</u
-					> and a way we grow professionally and as human beings.
+					Let's face it, we are pretty good at cranking out code from the flow-zone but sometimes we
+					get stuck. Some problems are hard and rubber duck debugging is not enough. When that
+					happens, we help each other get better. One way we do this by pairing up and working
+					through the problem together. This is one aspect of <u>respect</u> and a way we grow both professionally
+					and as human beings.
 				</p>
 			</details>
 		</section>
@@ -431,12 +435,79 @@
 				<p>This level of transparency and vulnerability is the iron that keeps Kopis sharp.</p>
 			</details>
 		</section>
+		<section>
+			<h2 class="kern-10 text-xl uppercase">What is the secret to success?</h2>
+			<p>True or False? We have a secret sauce that we use to make our clients happy.</p>
+			<br />
+			<details>
+				<summary>Reveal the answer!</summary>
+				<p>
+					True! We have a secret sauce that we use to make our clients happy. It is a proprietary
+					blend of
+					<dfn>respect</dfn>, <dfn>responsibility</dfn>, <dfn>reliability</dfn>, and
+					<dfn>relevance</dfn>. We have found that when we treat our clients with respect, we are
+					able to build a relationship that is based on trust. When we are responsible, we are able
+					to deliver on our promises. When we are reliable, we are able to deliver on time. When we
+					are relevant, we are able to deliver the right solution. When we do all of these things,
+					we are able to build long-lasting relationships with our clients.
+				</p>
+				<p>
+					All of these qualities come from <u>listening well</u> and validating our understanding by
+					encouraging communication throughout the development process. One part of this is the
+					<u>live access</u>
+					program that we mentioned earlier. Another part is our
+					<u>status updates</u> we push into version control. We have found that these updates are a
+					great way to communicate internally to keep us informed about project concerns and to seek
+					clarity. Responses can be made via a commit, comment or all depending on the need.
+				</p>
+				<p>
+					It's important to define the problem correct, and those gumballs are not the only physical
+					props we use to achieve success. We also have past experience captured as <u
+						>architectural blueprints</u
+					> in the form hexagonal puzzle pieces. We re-create the puzzle of a similar solution and re-evaluate
+					the various "ilities" in the light of present-day technology and the specifics of this challenge.
+					Can we simplify the puzzle? Can we improve the puzzle? Is something missing? We literally have
+					an ever-growing bag of tricks in the form of 6-sided puzzle pieces, each with a different aspect
+					of the development process printed on it.
+				</p>
+			</details>
+		</section>
+		<section>
+			<h2 class="kern-10 text-xl uppercase">How does Kopis find and keep great people?</h2>
+			<p>True or False? Kopis only hires the very best.</p>
+			<br />
+			<details>
+				<summary>Reveal the answer!</summary>
+				<p>
+					False. That would be a very short list of otherwise dysfunctional people. Kopis looks for
+					people that own their mistakes and strive to improve. They need people that understand
+					clients come to us for solutions not problems in the form of missed deadlines, unexpected
+					solutions and hostile relationships. The success of Kopis depends on people putting ego
+					aside, working diligently and speaking plainly about what they know and do not know, what
+					they can and cannot do. They feel and obligation to speak openly about concerns, are
+					willing to share work-in-progress and are generally comfortable being vulnerable. They are
+					principled and practical. They pursue their craft, but not at the customers expense.
+				</p>
+				<p>
+					When we find someone like <b>that</b>, they naturally become part of the Kopis family,
+					because that is who we are. We work with them to ensure they are fairly compensated so
+					they can continue to grow with us.
+				</p>
+				<p>
+					Our avatars assume our strengths and weaknesses, and both are literally a badge of honor.
+					We strive to be the best we can be, and that generally means focusing on our strengths and
+					avoiding our weaknesses. There is no shame in earning a "rosie" or "rembrandt" badge, nor
+					should much pride be associated with "mokoto" for the innate ability to accurately
+					estimate work. These are just ways of saying, we know you and you matter.
+				</p>
+			</details>
+		</section>
 	</main>
 </div>
 
 <style lang="postcss">
 	.body {
-		color: rgb(91, 91, 194);
+		color: rgb(203, 203, 203, 0.99);
 		margin: 0;
 		max-width: 80rem;
 	}
@@ -467,7 +538,7 @@
 	dfn,
 	u {
 		text-decoration: double;
-		border-bottom: 0.1rem solid red;
+		border-bottom: 0.1rem solid rfaed;
 	}
 
 	main > section {
@@ -499,5 +570,9 @@
 		/* opaque */
 		background-color: rgb(10, 10, 58);
 		padding: 1rem;
+	}
+
+	p {
+		margin: 0.5rem;
 	}
 </style>

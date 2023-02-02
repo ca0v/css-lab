@@ -569,10 +569,6 @@ video {
   list-style-type: disc;
 }
 
-.grid-cols-4 {
-  grid-template-columns: repeat(4, minmax(0, 1fr));
-}
-
 .gap-8 {
   gap: 2rem;
 }
@@ -594,11 +590,6 @@ video {
   line-height: 1.75rem;
 }
 
-.text-sm {
-  font-size: 0.875rem;
-  line-height: 1.25rem;
-}
-
 .text-xs {
   font-size: 0.75rem;
   line-height: 1rem;
@@ -610,10 +601,6 @@ video {
 
 .capitalize {
   text-transform: capitalize;
-}
-
-.underline-offset-1 {
-  text-underline-offset: 1px;
 }
 
 body {
