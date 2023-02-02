@@ -496,9 +496,16 @@
 				<p>
 					Our avatars assume our strengths and weaknesses, and both are literally a badge of honor.
 					We strive to be the best we can be, and that generally means focusing on our strengths and
-					avoiding our weaknesses. There is no shame in earning a "rosie" or "rembrandt" badge, nor
-					should much pride be associated with "mokoto" for the innate ability to accurately
-					estimate work. These are just ways of saying, we know you and you matter.
+					avoiding our weaknesses. There is no shame in earning a "rosie" or "rembrandt" badge
+					because of a talkative nature or lack of UX skills, nor should much pride be associated
+					with "mokoto" for ones innate ability to accurately estimate work. These badges are ways
+					of saying, we know you, you are unique and you matter to us.
+				</p>
+				<p>
+					One final note on keeping great people...we live in Greenville. That is not to say we
+					reside in Greenville but we experience Greenville. Developers trend toward introvert, but
+					we all benefit from enriching experiences. This may mean lunch, laser tag or an in-office
+					potluck, but life is too short and work is too long to not know our colleagues.
 				</p>
 			</details>
 		</section>
