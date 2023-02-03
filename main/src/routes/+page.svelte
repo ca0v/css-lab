@@ -238,7 +238,7 @@
 							the ability of the software to be adjusted or configured to meet specific needs or
 							requirements.
 						</dd>
-						<dt>Localizability</dt>
+						<dt>Localization</dt>
 						<dd>
 							the ability of the software to be adapted for use in different locales or regions.
 						</dd>
@@ -264,7 +264,7 @@
 							the ability of the software to be audited to determine if it is functioning correctly
 							and securely.
 						</dd>
-						<dt>Disaster recovery</dt>
+						<dt>Resurrectability</dt>
 						<dd>
 							the ability of the software to recover from disasters or failures and continue
 							functioning correctly.
@@ -387,7 +387,7 @@
 				<h2>Puzzles</h2>
 				<p>
 					We believe in "ilites" so much that we have created hexagon-shaped puzzle pieces that we
-					assemble after a project has been completed to memorialize the archhitectural blueprint of
+					assemble after a project has been completed to memorialize the architectural blueprint of
 					that solution.
 				</p>
 				<br />
@@ -526,10 +526,6 @@
 		letter-spacing: 0.1em;
 	}
 
-	h1 {
-		margin: 0;
-	}
-
 	ul > li {
 		line-height: 2rem;
 	}
@@ -545,7 +541,7 @@
 	dfn,
 	u {
 		text-decoration: double;
-		border-bottom: 0.1rem solid rfaed;
+		border-bottom: 0.1rem solid red;
 	}
 
 	main > section {
