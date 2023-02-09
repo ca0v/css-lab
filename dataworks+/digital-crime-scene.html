@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/@picocss/pico@1.*/css/pico.min.css"
+    />
+    <style>
+      :root {
+        --color-primary: rgb(56, 16, 16);
+        --color-primary-text: rgb(255, 255, 255);
+      }
+
+      main {
+        display: grid;
+        grid-template-columns: 1fr;
+      }
+
+      main > * {
+        text-align: center;
+      }
+
+      .features {
+        display: grid;
+        grid-template-columns: repeat(3, 30vw);
+        justify-content: center;
+        row-gap: 2rem;
+      }
+
+      section {
+        padding: 0;
+        margin: 0;
+      }
+
+      section.col-1-2 {
+        grid-column-start: 1;
+        grid-column-end: 3;
+        /* anchor right */
+        justify-self: end;
+      }
+      section.col-2-2 {
+        grid-column-start: 2;
+        grid-column-end: 4;
+        justify-self: start;
+      }
+
+      section.col-1-2 > p {
+        text-align: right;
+      }
+
+      section.col-2-2 > p {
+        text-align: left;
+      }
+
+      section > p {
+        font-size: 1.5rem;
+        line-height: 2.5rem;
+        letter-spacing: 0.1rem;
+      }
+
+      section > h3 {
+        border-bottom-color: var(--color-primary);
+        border-bottom-width: 1px;
+        border-bottom-style: solid;
+        margin-bottom: 0;
+      }
+
+      body > header {
+        /* prevent from scrolling off the screen */
+        position: sticky;
+        top: 0;
+        left: 0;
+        width: 100vw;
+        background-color: var(--color-primary);
+
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding: 0;
+        padding-top: 1rem;
+        padding-bottom: 1rem;
+      }
+      header > h1,
+      header > h2 {
+        margin-bottom: 0;
+      }
+    </style>
+  </head>
+  <body>
+    <header>
+      <h1>Digital CrimeScene</h1>
+      <h2>Secure, Reliable Case Management</h2>
+      <p>
+        Securely store and manage crime scene photos, data, and workflow in a
+        web based application.
+      </p>
+    </header>
+    <main>
+      <div class="features">
+        <section class="col-2-2">
+          <h3>Secure Storage</h3>
+          <p>
+            Record, document and manage crime scene data. Store forensic data,
+            images, videos, photos, reports, documents, drawings and narratives.
+            Can process millions of images using Microsoft technology and a
+            relational database, facilitating the secure sharing, backing up,
+            and recovery.
+          </p>
+        </section>
+        <section class="col-1-2">
+          <h3>Tamper Resistent</h3>
+          <p>
+            Original images are protected from alterations, loss, and
+            unauthorized access. The original image is the "Electronic Negative"
+            and is technically unalterable, preventing courtroom authenticity
+            claims. Image access is controlled by user permissions and the audit
+            records are preserved.
+          </p>
+        </section>
+        <section class="col-2-2">
+          <h3>Advanced Search Capabilities</h3>
+          <p>
+            This is the fastest image retrieval and display available for
+            onscreen review and revisions. Every field is searchable,
+            facilitating precise search. The Case ID, Description, Case Type,
+            Case Status, narratives and journals are stored at the case level.
+            Case types (e.g. "burglary", "robbery", "homicide", etc.) are
+            managed by administrators allowing for custom and consistent case
+            management.
+          </p>
+        </section>
+        <section class="col-1-2">
+          <h3>Security</h3>
+          <p>
+            Digital CrimeScene controls user access for viewing, printing and
+            adding photos. All active is audited. Activity reports are available
+            to review access history. Rights are setup by case type and by case,
+            ensuring access is limited to only those that need it. Security can
+            be applied to individual images as well.
+          </p>
+        </section>
+        <section class="col-2-2">
+          <h3>Image Categories</h3>
+          <p>
+            Images can be tagged with attributes to facilitate identification.
+            Access control can be applied to these categories.
+          </p>
+        </section>
+        <section class="col-1-2">
+          <h3>Image Grouping</h3>
+          <p>
+            Images from multiple records can be combined into a group for later
+            export to HTML or printing.
+          </p>
+        </section>
+        <section class="col-2-2">
+          <h3>Image Enhancement</h3>
+          <p>
+            Use either the internal tooling or Adobe Photoshop to enhance an
+            image. The history palette of the Adobe session is logged. The
+            original images are never altered.
+            <br />
+            The <i>Image Comparison</i> tool will allow you to compare images
+            side-by-side or edit copies of images for easier viewing and to
+            clarify details.
+            <br />
+            Images can be overlaid to show similarities and difference between
+            images.
+            <br />
+            Images can be calibrated with distance measurements.
+          </p>
+        </section>
+        <section class="col-1-2">
+          <h3>Customization</h3>
+          <p>
+            Digital CrimeScene is configurable and maintainable. Customizable
+            data fields, databases added, fields added and customized, and
+            attributes created. We make it easy to tailor the application to
+            your changing needs.
+          </p>
+        </section>
+        <section class="col-2-2">
+          <h3>Mobile</h3>
+          <p>
+            Our mobile product captures digital evidence and allows for the
+            assignment of case numbers to the images with a complete audit
+            trail.
+          </p>
+        </section>
+      </div>
+    </main>
+  </body>
+</html>

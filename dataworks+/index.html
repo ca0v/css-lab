@@ -11,11 +11,20 @@
     <style>
       :root {
         --color-primary: rgb(56, 16, 16);
+        --color-primary-text: rgb(255, 255, 255);
+      }
+
+      body {
+        margin: 0;
+        padding: 0;
       }
       main {
         display: flex;
         flex-direction: column;
         align-items: center;
+        width: 100vw;
+        margin: 0;
+        padding: 0;
       }
 
       main > p,
@@ -39,12 +48,13 @@
       }
 
       .product-list {
-        display: grid;
-        justify-content: center;
-        align-items: center;
-        align-content: center;
-        grid-template-columns: 1fr 1fr 1fr 1fr;
+        display: flex;
+        flex-wrap: wrap;
         gap: 1rem;
+        padding-left: 10vw;
+        padding-right: 10vw;
+        /* center children */
+        justify-content: center;
       }
 
       .product-list > section {
@@ -62,6 +72,10 @@
       .product-list > section > * {
         text-align: center;
       }
+
+      a {
+        color: var(--color-primary-text);
+      }
     </style>
   </head>
   <body>
@@ -70,58 +84,58 @@
       <p>Developing law enforcement<br />and criminal justice technology.</p>
       <button class="button">Explore</button>
       <h2>Products</h2>
-      <section class="explore">
-        <div class="product-list">
-          <section>
-            <h3>Evolution</h3>
-            <p>Ruggedized All-in-One Mobile ID Device</p>
-          </section>
-          <section>
-            <h3>Themis LS</h3>
-            <p>Integrated Fingerprint Booking System</p>
-          </section>
-          <section>
-            <h3>LiveScan Cabinets</h3>
-            <p>Ruggedized Hardware Protection</p>
-          </section>
-          <section>
+      <div class="product-list">
+        <section>
+          <h3>Evolution</h3>
+          <p>Ruggedized All-in-One Mobile ID Device</p>
+        </section>
+        <section>
+          <h3>Themis LS</h3>
+          <p>Integrated Fingerprint Booking System</p>
+        </section>
+        <section>
+          <h3>LiveScan Cabinets</h3>
+          <p>Ruggedized Hardware Protection</p>
+        </section>
+        <section>
+          <a href="./digital-crime-scene.html">
             <h3>Digital CrimeScene</h3>
-            <p>Secure Digital Evidence Management</p>
-          </section>
-          <section>
-            <h3>Themis Image System</h3>
-            <p>Mugshot Booking and Repository System</p>
-          </section>
-          <section>
-            <h3>Themis Facial Recognition</h3>
-            <p>Secure Biometric Facial Recognition System</p>
-          </section>
-          <section>
-            <h3>Themis Tattoo Recognition</h3>
-            <p>Secure Biometric Tattoo Matching System</p>
-          </section>
-          <section>
-            <h3>Themis Iris Recognition</h3>
-            <p>Iris Capture and Matching System</p>
-          </section>
-          <section>
-            <h3>Themis ID</h3>
-            <p>Biometric Fingerprint Identification System</p>
-          </section>
-          <section>
-            <h3>BandWorks</h3>
-            <p>Ultra-Durable Inmate Armband System</p>
-          </section>
-          <section>
-            <h3>BadgeWorks</h3>
-            <p>Custom ID Card Creation System</p>
-          </section>
-          <section>
-            <h3>Themis GTM</h3>
-            <p>Secure Paperless Fingerprint Archive</p>
-          </section>
-        </div>
-      </section>
+            <p>Secure Digital Evidence Management</p></a
+          >
+        </section>
+        <section>
+          <h3>Themis Image System</h3>
+          <p>Mugshot Booking and Repository System</p>
+        </section>
+        <section>
+          <h3>Themis Facial Recognition</h3>
+          <p>Secure Biometric Facial Recognition System</p>
+        </section>
+        <section>
+          <h3>Themis Tattoo Recognition</h3>
+          <p>Secure Biometric Tattoo Matching System</p>
+        </section>
+        <section>
+          <h3>Themis Iris Recognition</h3>
+          <p>Iris Capture and Matching System</p>
+        </section>
+        <section>
+          <h3>Themis ID</h3>
+          <p>Biometric Fingerprint Identification System</p>
+        </section>
+        <section>
+          <h3>BandWorks</h3>
+          <p>Ultra-Durable Inmate Armband System</p>
+        </section>
+        <section>
+          <h3>BadgeWorks</h3>
+          <p>Custom ID Card Creation System</p>
+        </section>
+        <section>
+          <h3>Themis GTM</h3>
+          <p>Secure Paperless Fingerprint Archive</p>
+        </section>
+      </div>
     </main>
     <footer>
       <p>
