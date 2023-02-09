@@ -55,17 +55,17 @@
       }
 
       section.col-1-2 > p {
-        text-align: right;
+        text-align: justify;
       }
 
       section.col-2-2 > p {
-        text-align: left;
+        text-align: justify;
       }
 
       section > p {
         font-size: 1.5rem;
         line-height: 2.5rem;
-        letter-spacing: 0.1rem;
+        padding: 1rem;
       }
 
       section > h3 {
@@ -99,6 +99,23 @@
       header > h2,
       header > p {
         font-size: smaller;
+      }
+
+      /* for mobile screens */
+      @media (max-width: 900px) {
+        .features {
+          grid-template-columns: 1fr;
+        }
+        section.col-1-2 {
+          grid-column-start: 1;
+          grid-column-end: 2;
+          justify-self: center;
+        }
+        section.col-2-2 {
+          grid-column-start: 1;
+          grid-column-end: 2;
+          justify-self: center;
+        }
       }
     </style>
   </head>
