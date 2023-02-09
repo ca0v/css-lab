@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>DataWorks Plus</title>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/@picocss/pico@1.*/css/pico.min.css"
+    />
+    <style>
+      :root {
+        --color-primary: rgb(56, 16, 16);
+      }
+      main {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+      }
+
+      main > p,
+      main > h1 {
+        text-align: center;
+      }
+
+      .button {
+        width: 8rem;
+        height: 3rem;
+        border-radius: 1.5rem;
+        text-transform: uppercase;
+        background-color: var(--color-primary);
+        text-align: center;
+        background-clip: border-box;
+        border: none;
+      }
+
+      footer {
+        opacity: 0.1;
+      }
+
+      .product-list {
+        display: grid;
+        justify-content: center;
+        align-items: center;
+        align-content: center;
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+        gap: 1rem;
+      }
+
+      .product-list > section {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        padding: 1rem;
+        border: 1px solid white;
+        height: 12rem;
+        width: 16rem;
+        margin: 0;
+      }
+
+      .product-list > section > * {
+        text-align: center;
+      }
+    </style>
+  </head>
+  <body>
+    <main>
+      <h1>Technology<br />For a Safer World</h1>
+      <p>Developing law enforcement<br />and criminal justice technology.</p>
+      <button class="button">Explore</button>
+      <h2>Products</h2>
+      <section class="explore">
+        <div class="product-list">
+          <section>
+            <h3>Evolution</h3>
+            <p>Ruggedized All-in-One Mobile ID Device</p>
+          </section>
+          <section>
+            <h3>Themis LS</h3>
+            <p>Integrated Fingerprint Booking System</p>
+          </section>
+          <section>
+            <h3>LiveScan Cabinets</h3>
+            <p>Ruggedized Hardware Protection</p>
+          </section>
+          <section>
+            <h3>Digital CrimeScene</h3>
+            <p>Secure Digital Evidence Management</p>
+          </section>
+          <section>
+            <h3>Themis Image System</h3>
+            <p>Mugshot Booking and Repository System</p>
+          </section>
+          <section>
+            <h3>Themis Facial Recognition</h3>
+            <p>Secure Biometric Facial Recognition System</p>
+          </section>
+          <section>
+            <h3>Themis Tattoo Recognition</h3>
+            <p>Secure Biometric Tattoo Matching System</p>
+          </section>
+          <section>
+            <h3>Themis Iris Recognition</h3>
+            <p>Iris Capture and Matching System</p>
+          </section>
+          <section>
+            <h3>Themis ID</h3>
+            <p>Biometric Fingerprint Identification System</p>
+          </section>
+          <section>
+            <h3>BandWorks</h3>
+            <p>Ultra-Durable Inmate Armband System</p>
+          </section>
+          <section>
+            <h3>BadgeWorks</h3>
+            <p>Custom ID Card Creation System</p>
+          </section>
+          <section>
+            <h3>Themis GTM</h3>
+            <p>Secure Paperless Fingerprint Archive</p>
+          </section>
+        </div>
+      </section>
+    </main>
+    <footer>
+      <p>
+        <i>For further study</i>
+        I learned that providing a border radius in px and % have different
+        affects on the curve. If you provide a border radius of 50% it will
+        create an oval, curving every part of the border. If you provide a
+        border radius of 50px it will create a semi-circles that is 50px in
+        diameter on each end of the border. I'm not sure if I'm correct about
+        this but the button is 8rem x 3rem, so a radius of 1.5rem would be 50%
+        of the height but when I specify 50% the curve is different. But if I
+        set the radius to 4rem (50% height) the curve is correct again. So it
+        seems an absolute value will be constrained by 1/2 the width/height of
+        the box but a relative one will affect the entire curve, crating an
+        oval. I see nothing in the docs indicating this to be the case.
+      </p>
+    </footer>
+  </body>
+</html>
