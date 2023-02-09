@@ -10,7 +10,15 @@
     <style>
       :root {
         --color-primary: rgb(56, 16, 16);
+        --color-banner-background: rgb(56, 16, 16);
         --color-primary-text: rgb(255, 255, 255);
+      }
+
+      /* if light scheme */
+      @media (prefers-color-scheme: light) {
+        :root {
+          --color-banner-background: rgb(255, 255, 255);
+        }
       }
 
       main {
@@ -73,7 +81,7 @@
         top: 0;
         left: 0;
         width: 100vw;
-        background-color: var(--color-primary);
+        background-color: var(--color-banner-background);
 
         display: flex;
         flex-direction: column;
@@ -83,8 +91,14 @@
         padding-bottom: 1rem;
       }
       header > h1,
-      header > h2 {
+      header > h2,
+      header > p {
         margin-bottom: 0;
+        text-align: center;
+      }
+      header > h2,
+      header > p {
+        font-size: smaller;
       }
     </style>
   </head>
