@@ -11,14 +11,21 @@
       :root {
         --color-primary: rgb(56, 16, 16);
         --color-banner-background: rgb(56, 16, 16);
-        --color-primary-text: rgb(255, 255, 255);
+        --color-primary-text: #f9f9f9;
+        --color-primary-background: #090909;
       }
 
       /* if light scheme */
       @media (prefers-color-scheme: light) {
         :root {
-          --color-banner-background: rgb(255, 255, 255);
+          --color-primary-background: #f9f9f9;
+          --color-banner-background: #f0f0f0;
         }
+      }
+
+      body {
+        background-color: var(--color-primary-background);
+        color: var(--bolor-primary-text);
       }
 
       main {
