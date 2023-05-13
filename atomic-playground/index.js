@@ -8,6 +8,13 @@ function asDom(html) {
   return template.content.firstChild;
 }
 
+function createSlider() {
+  const slider = asDom(
+    `<input type="range" min="1" max="100" value="1" class="slider" id="myRange">`
+  );
+  return slider;
+}
+
 function injectCss(size) {
   const target = document.querySelector("#style");
   if (!target) throw `Could not find #style element`;
@@ -16,9 +23,15 @@ function injectCss(size) {
   const borderWidths = range(size).map(
     (i) => `.bw${i} { border-width: ${i}rem; }`
   );
-  const baseColors = range(size).map((i) => `lch(70% 100 ${i * 360/size})`);
-  const contrastColors = range(size).map((i) => `lch(70% 75 ${180 + i *360/size})`);
-  const complementColors = range(size).map((i) => `lch(30% 25 ${120 + i * 360/size})`);
+  const baseColors = range(size).map(
+    (i) => `lch(100 var(--seed) ${(i * 360) / size})`
+  );
+  const contrastColors = range(size).map(
+    (i) => `lch(var(--seed) 80 ${180 + (i * 360) / size})`
+  );
+  const complementColors = range(size).map(
+    (i) => `lch(10 var(--seed) ${120 + (i * 360) / size})`
+  );
   const borderColors = contrastColors.map(
     (c, i) => `.bc${i} { border-color: ${c}; }`
   );
@@ -71,7 +84,7 @@ function injectCss(size) {
     b: "bw1 solid bgc0 bc0 tc0 p1 m0 ts2 block m1 center",
     c1: "bgc1 bc1 tc1",
     c2: "bgc2 bc2 tc2",
-    "page-title": "font1 nowrap m0 p2 ts6 bw1 solid center bc1 tc4 capitalize"
+    "page-title": "font1 nowrap m0 p2 ts6 bw1 solid center bc1 tc4 capitalize",
   };
 
   const macroCss = [];
@@ -94,22 +107,49 @@ function injectCss(size) {
   const samples = document.querySelector(".samples");
   if (!samples) throw `Could not find .samples element`;
 
-  
   baseColors.forEach((c, i) =>
     samples.appendChild(
-      asDom(`<span class="b bc${i} bgc${i} tc${i}">bc${i} bgc${i} tc${i}</span>`)
+      asDom(
+        `<span class="b w1 h1 bc${i} bgc${i} tc${i}">${i}</span>`
+      )
     )
   );
 
   Object.keys(macros).forEach((k) => {
-    samples.appendChild(asDom(`<div class="b w5 h2">${k}</div>`));
+    samples.appendChild(asDom(`<div class="b w2 h2">${k}</div>`));
   });
 
-  textColors.forEach((c, i) => samples.appendChild(asDom(`<div class="m1 p1 tc${i} w1 h1 ts2 center">tc${i}</div>`)));
-  bgColors.forEach((c, i) => samples.appendChild(asDom(`<div class="m1 p1 tc${i} bc0 solid w3 h2 center bgc${i}">bgc${i}</div>`)));
-  borderColors.forEach((c, i) => samples.appendChild(asDom(`<div class="m1 p1 bw2 center solid tc${i} w1 h1 bc${i}">bc${i}</div>`)));
+  textColors.forEach((c, i) =>
+    samples.appendChild(
+      asDom(`<div class="m1 p1 tc${i} w1 h1 ts2 center">tc${i}</div>`)
+    )
+  );
+  bgColors.forEach((c, i) =>
+    samples.appendChild(
+      asDom(
+        `<div class="m1 p1 tc${i} w8 h5 center bgc${i}">bgc${i}</div>`
+      )
+    )
+  );
+  borderColors.forEach((c, i) =>
+    samples.appendChild(
+      asDom(
+        `<div class="m1 p1 bw2 center solid tc${i} w5 h5 bgc${i} bc${i}">bc${i}</div>`
+      )
+    )
+  );
 
-
+  const slider = createSlider();
+  slider.addEventListener("input", (e) => {
+    const seed = e.target.value;
+    console.log(seed);
+    // modify the css variable "seed"
+    document.documentElement.style.setProperty("--seed", seed);
+  });
+  slider.value = 10;
+  // trigger
+  slider.dispatchEvent(new Event("input"));
+  samples.appendChild(slider);
 }
 
 injectCss(8);
